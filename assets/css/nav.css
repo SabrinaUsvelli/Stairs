@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .23s ease-in;
+}
+
+.logo:hover{
+    transform: scale(0.97);
+    box-shadow: 0 0 0 2px var(--green);
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+a{
+    color: var(--green);
+    
+    transition: all .23s ease-in;
+}
+
+a:hover{
+    color: var(--text);
+    text-decoration: underline;
+}

@@ -3,26 +3,12 @@ h1,h4{
     color: var(--green)
 }
 
-nav{
-    display: flex;
-    padding: 1rem;
-    justify-content: space-between;
-}
-
-ul{
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-}
-
-
-
 header{
     padding: 1rem;
 }
 
 p{
-    padding: 1rem;
+    padding: 1.5rem 3rem;
 }
 
 .hero{

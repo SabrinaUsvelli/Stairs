@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/login.css" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login">
+        <img src="../assets/images/logostairslog.jpg" alt="Subaru waliking upstairs">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" maxlength="20" placeholder="Natsuki">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" maxlength="20" placeholder="Daniel">
+            <label for="bdaymonth">Birthday:</label>
+            <input type="day" id="bday" name="bday" placeholder="2026-06-03">
+            <button type="submit" formaction="../index.html">Login</button>
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
