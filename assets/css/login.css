@@ -22,31 +22,35 @@ body {
     gap: 0.5rem;
 }
 
-input[type="text"], input[type="password"], input[type="day"] {
+input[type="text"], input[type="password"], input[type="date"] {
     padding: 0.5rem;
     font-family: 'Poppins', sans-serif;
     border:none;
-    border-bottom: 2px solid var(--green);
+    border-bottom: 2px solid var(--graygreen);
     background-color: transparent;
     transition: all .2s ease-in;
-    color: var(--green);
+    color: var(--graygreen);
     font-size: 1rem;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="day"]:focus {
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus {
     outline: none;
     border-bottom: 2px solid var(--greenbg);
     color: var(--greenbg);
 }
 
-button, input[type="reset"] {
+.btn {
     padding: 0.5rem;
     border: 1px solid var(--greenbg);
-    border-radius: 8px;
+    border-radius: 14px;
     cursor: pointer;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     margin-top: 0.5rem;
+    color: var(--greenbg);
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
 }
 
 img{
