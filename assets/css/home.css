@@ -1,0 +1,31 @@
+h1,h4{
+    text-align: center;
+    color: var(--green)
+}
+
+header{
+    padding: 1rem;
+}
+
+p{
+    padding: 1rem;
+}
+
+.hero{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hero img{
+    max-width: 600px;
+    border-radius: 14px;
+    transition:all .33s ease-in;
+    object-fit: cover;
+    width:1100px;
+}
+
+.hero img:hover{
+    transform: scale(0.92);
+    box-shadow: 0 0 0 7px var(--green);
+}

@@ -1,0 +1,50 @@
+:root{
+    --white: #ffffff;
+    --green: #7CB701;
+    --greenbg: rgb(149, 214, 0, 0.2);
+    --bg: rgb(95, 203, 116);
+    --text: #000000;
+    --orange: #FDB275;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-moz-selection {
+    color: var(--bg);
+    background: var(--green);
+}
+
+::selection {
+    color: var(--bg);
+    background: var(--green);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--greenbg);
+}
+
+mark{
+    background-color: transparent;
+    color: var(--green);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf) format('truetype');
+}
