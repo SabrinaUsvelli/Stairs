@@ -1,4 +1,4 @@
-header{
+header, main{
     text-align: center;
 }
 
@@ -35,6 +35,3 @@ h1,h2{
     max-width: 500px;
 }
 
-.evotext{
-    text-align: center;
-}
