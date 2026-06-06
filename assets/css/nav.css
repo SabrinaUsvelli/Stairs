@@ -20,17 +20,22 @@ nav{
 ul{
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
 }
 
 a{
     color: var(--green);
-    
-    transition: all .23s ease-in;
 }
 
 a:hover{
     color: var(--text);
     text-decoration: underline;
+}
+
+li:hover{
+    transform: scale(1.1);
+    color: var(--green);
+    transition: all .23s ease-in;
 }

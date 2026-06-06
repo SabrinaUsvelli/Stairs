@@ -21,6 +21,7 @@ h1,h2{
 
 .x{
     display: flex;
+    flex-wrap:wrap;
     flex-direction: row;
     padding: 0 3rem;
     align-items: center;
