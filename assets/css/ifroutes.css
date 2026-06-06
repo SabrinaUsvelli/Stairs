@@ -2,6 +2,69 @@ header, main{
     text-align: center;
 }
 
-h1,h2{
+h2, h4{
     margin-bottom: 0.75rem;
+}
+
+body{
+    background: linear-gradient(
+        45deg,
+        var(--text),
+        var(--graygreen)
+        );
+    background-size: 400% 400%;
+    animation: bg 10s infinite;
+    color: var(--greenbg);
+}
+
+a{
+    color: var(--greenbg);
+}
+
+h1,h4{
+    color: var(--greenbg);
+}
+
+.hero img:hover{
+    box-shadow: 0 0 0 7px var(--greenbg);
+}
+
+.logo:hover{
+    box-shadow: 0 0 0 2px var(--greenbg);
+}
+
+::-webkit-selection {
+    color: var(--text);
+    background: var(--greenbg);
+}
+
+::selection {
+    color: var(--text);
+    background: var(--greenbg);
+}
+
+mark{
+    color: var(--graygreen);
+}
+
+.overtext h1{
+    color: var(--text);
+    font-size: 4rem;
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 1); 
+}
+
+.overtext h1:hover{
+    opacity: 1;
+}
+
+@keyframes bg {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
