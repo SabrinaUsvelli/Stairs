@@ -49,8 +49,34 @@
         <img src="../assets/images/greedif3.jpg" alt="Greed IF">
         <img src="../assets/images/gluttonyshaula.jpg" alt="Gluttony IF">
       </div>
-      <button class="btn right">&gt;</button>
+      <div class="btn right">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+      </div>
     </div>
   </main>
+  <footer>
+    <p>&copy; 2023 AURA MONSTER. All rights reserved.</p>
+  </footer>
+  <a href="#top" class="btn-fixed">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+    </svg>
+  </a>
 </body>
+
+<script>
+  const carousel = document.querySelector('.carousel');
+  const leftBtn = document.querySelector('.btn.left');
+  const rightBtn = document.querySelector('.btn.right');
+  leftBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+  rightBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+</script>
+<!--da ripassare python, this shi is basically the same as that-->
+
 </html>

@@ -33,6 +33,10 @@
     display: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -104,6 +108,33 @@ footer{
     text-align: center;
     padding: 1rem;
     color: var(--text);
+}
+
+.btn-fixed{
+    position:fixed;
+    bottom: 20px;
+    right:20px;
+    background: var(--green);
+    color: var(--greenbg);
+    padding: 0.5rem;
+    border-radius: 14px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding: 3px;
+    z-index: 1000;
+}
+
+.btn-fixed:hover {
+    transform: scale(1.15);
+}
+
+.btn-fixed:active{
+    transform: scale(0.98);
 }
 
 @font-face {

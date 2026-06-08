@@ -1,7 +1,3 @@
-html{
-    scroll-behavior: smooth;
-}
-
 header, main{
     text-align: center;
 }
@@ -11,14 +7,13 @@ h2, h4{
 }
 
 body{
-    /*background: linear-gradient(
+    background: linear-gradient(
         45deg,
         var(--text),
         var(--graygreen)
         );
     background-size: 400% 400%;
-    animation: bg 10s infinite;*/
-    background-color: var(--text);
+    animation: bg 10s infinite;
     color: var(--greenbg);
 }
 
@@ -97,6 +92,7 @@ mark{
     border-radius: 14px;
     scroll-snap-align: center;
     transition: transform 0.3s;
+    z-index: 1;
 }
 
 .carousel img:hover {
@@ -115,7 +111,7 @@ mark{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--graygreen);
+    background: var(--green);
     color: var(--text);
     border: none;
     font-size: 2rem;
@@ -123,6 +119,21 @@ mark{
     height: 40px;
     cursor: pointer;
     border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    z-index: 100;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-50%) scale(1.15);
+}
+
+.btn:active {
+    transform: translateY(-50%) scale(0.95);
 }
 
 .left {
@@ -133,7 +144,9 @@ mark{
     right: 10px;
 }
 
-
+footer{
+    color: var(--greenbg);
+}
 
 
 
