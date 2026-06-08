@@ -91,12 +91,13 @@ mark{
     object-fit: cover;
     border-radius: 14px;
     scroll-snap-align: center;
-    transition: transform 0.3s;
+    transition: all 0.3s;
     z-index: 1;
 }
 
 .carousel img:hover {
     transform: scale(0.92);
+    filter: brightness(0.6);
 }
 
 .carousel::-webkit-scrollbar {
